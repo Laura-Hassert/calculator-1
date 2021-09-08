@@ -96,11 +96,12 @@ let evensArr = []
   Use a for-loop to iterate through each number in the 'nums' array, if the number is even, append it to the 'evensArr'.
 */
 
-// evensArr = nums.slice(1, 3, 4, 5, 8, 9)
-// for (let i = 0; i++) {
-//     console.log(evensArr[i])
-// }
-
+for (let i = 0; i < nums.length; i++) {
+    if(nums[i] % 2 === 0) {
+        evensArr.push(nums[i]);
+    }
+}
+console.log(evensArr);
 
 
 ////////// PROBLEM 8 //////////
@@ -138,10 +139,10 @@ if (score < 60) {
 
 // let changeMyMind = true
 // if (changeMyMind) {
-//     console.log("true")
+//     console.log("true");
 // } else {
 //     changeMyMind = true;
-//     console.log("now it's true")
+//     console.log("now it's true");
 // }
 
 
@@ -149,10 +150,10 @@ if (score < 60) {
 
 let changeMyMind = false
 if (changeMyMind) {
-    console.log("true")
+    console.log("true");
 } else {
-    changeMyMind = true;
-    console.log("now it's true")
+    changeMyMind !== true;
+    console.log("now it's true");
 }
 
 
@@ -168,14 +169,21 @@ var myFavoriteNumbers = [4,8,12,16,20,24];
   Create a variable named 'someNum' and set it equal to the fifth value of the 'myFavoriteNumbers' array.
 */
 
-//Code Here
+let someNum = myFavoriteNumbers.slice(5)
+    console.log(someNum);
 
 
 
 // Subscripting (accessing values using their index) an array can fail. What happens if you subscript to the 7th element, but there are not 7 elements in the array? Let's write some code to check for that. 
 // Use an if statement to check the length of the 'myFavoriteNumbers' array. If it's less than 7, log 'There are not enough elements in this array' to the console. If the length is more than 7, reassign the value of 'someNum' to the value of the 7th element in the array. (Hint: how can you make sure that your code works for exactly 7 elements? What index do you use to get the 7th element?)
 
-//Code Here
+someNum = myFavoriteNumbers.slice(7)
+for (let i = 0; i < 1; i++) {
+    if(myFavoriteNumbers.length < 7) {
+    console.log("There are not enough elements in this array");
+    }
+}
+console.log(someNum);
 
 
 ////////// PROBLEM 11 //////////
