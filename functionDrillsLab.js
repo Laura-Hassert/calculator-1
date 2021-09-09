@@ -150,10 +150,21 @@ let bigOrSmallArray = [1,101, 102, 2, 103, 4, 5, 6, 107]
   Return the answers array inside of the function to a variable called `arrayEvaluator`.
 */
 
-// function bigOrSmall(arr) {
-//   let answers = [];
-//   for()
-// }
+let arrayEvaluator = 
+
+function bigOrSmall(arr) {
+  let answers = [];
+  for(let i = 0; i < answers.length; i++) {
+    if (bigOrSmallArray[i] > 100) {
+      answers.push('big');
+    } else {
+      answers.push('small');
+    }
+    return answers === arrayEvaluator
+  }
+}
+
+console.log(arrayEvaluator);
 
 
 ////////////////// PROBLEM 10 ////////////////////
@@ -164,15 +175,16 @@ let loser = 'Glimmer'
   The function should loop over the array of contestant names. If the loser string appears in the array, splice it out. Return the new contestants array.
 */
 
-// function theEliminator(contestants, loser) {
-//   for(i = 0; i < contestants.length; i++) {
-//     console.log(contestants[i])
-//   } if (loser === contestants); {
-//       contestants.splice(3, 1)
-//   }
-// }
+function theEliminator(contestants, loser) {
+  for(i = 0; i < contestants.length; i++) {
+    if (loser === contestants[i]) {
+      contestants.splice(i, 1);
+      console.log(contestants);
+    }
+  }
+}
 
-// theEliminator(contestants);
+theEliminator(contestants, loser);
 
 
 ////////////////// PROBLEM 11 ////////////////////
@@ -181,8 +193,9 @@ let sampleString = "Hi, my name is Kylo."
   Write a function that takes im one argument, a string. The function should then console.log that string, in entirely uppercase characters.
 */
 
-//CODE HERE
+let upperCaseString = sampleString.toUpperCase()
 
+console.log(upperCaseString);
 
 ////////////////// PROBLEM 12 ////////////////////
 /*
